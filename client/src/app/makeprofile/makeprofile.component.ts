@@ -13,9 +13,9 @@ export class MakeprofileComponent implements OnInit {
 
   addUser(){
     const newUser = {
-      Console.log(this.fullname);
-      fullname: this.fullname,
+      fullname: this.fullname
     }
+    console.log(this.fullname);
   }
 
   ngOnInit() {

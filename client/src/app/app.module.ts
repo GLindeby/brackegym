@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { EmergencyFeedComponent } from './emergency-feed/emergency-feed.component';
 import { NavbarComponent} from './navbar/navbar.component';
 import { MakeprofileComponent} from './makeprofile/makeprofile.component';
+import { MatchComponent} from './match/match.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MakeprofileComponent} from './makeprofile/makeprofile.component';
     ProfileComponent,
     EmergencyFeedComponent,
     NavbarComponent,
-    MakeprofileComponent
+    MakeprofileComponent,
+    MatchComponent
   ],
   imports: [
     BrowserModule,
