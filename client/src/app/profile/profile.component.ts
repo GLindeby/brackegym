@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileserviceService } from '../services/profileservice.service';
-import {Http} from '@angular/http';
+
 
 @Component({
   selector: 'app-profile',
@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
   }
   test(){
-    this.profileservice.getProfiles().subscribe(data => console.log(data));
+    this.profileservice.getProfiles();
     //var data = this.profileservice.getProfiles();
     //console.log(data);
   }

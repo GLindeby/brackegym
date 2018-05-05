@@ -9,8 +9,8 @@ import { EmergencyFeedComponent } from './emergency-feed/emergency-feed.componen
 import { NavbarComponent} from './navbar/navbar.component';
 import { MakeprofileComponent} from './makeprofile/makeprofile.component';
 import { MatchComponent} from './match/match.component';
-import { HttpModule } from '@angular/http';
-import { EmergencyFeedComponent} from './emergency-feed/emergency-feed.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { EmergencyFeedComponent} from './emergency-feed/emergency-feed.component
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
