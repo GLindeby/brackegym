@@ -37,6 +37,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyparser.json());
 
 // API
+app.get('/api/user/all', function(req, res) {
+    res.send(user_db.getCollection('users').data);
+});
+
 app.get('/api/user/:name', function(req, res) {
     var users = user_db.getCollection('users');
     res.send(users.find({name: req.params.name}));
@@ -64,7 +68,7 @@ app.post('/api/feed/:message', function(req, res){
     var msg = JSON.parse(req.params.message);
     var messages = feed_db.getCollection('messages');
     messages.insert(msg);
-    feed_db.saveDatabase();
+    //feed_db.saveDatabase(); Avoid writing feed messages to disk for now
 })
 
 // Set to listening
