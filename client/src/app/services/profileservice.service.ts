@@ -11,11 +11,7 @@ export class ProfileserviceService {
   
   
   getProfiles(){  
-    //return this.http.get("http://localhost:3000/api/user/all");//.subscribe((data) => data);
-    //return this.http.get("http://localhost:3000/api/user/").subscribe();
-    this.http.get("http://localhost:3000/api/user/all").subscribe(res => {
-      console.log(res);
-    })
+    return this.http.get("http://localhost:3000/api/user/all");
 
   }
   addProfile(){
