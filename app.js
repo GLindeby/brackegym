@@ -54,6 +54,11 @@ app.get('/api/feed/', function(req, res) {
     res.send(feed_db.getCollection('messages').data);
 });
 
+app.post('/api/feed/clear', function(req, res){
+    console.log("Clearing feed from messages.");
+    clearCollection(feed_db, "messages");
+})
+
 app.post('/api/feed/:message', function(req, res){
     console.log("Posting new feed message: " + req.params.message);
     var msg = JSON.parse(req.params.message);
@@ -62,15 +67,14 @@ app.post('/api/feed/:message', function(req, res){
     feed_db.saveDatabase();
 })
 
-app.post('/api/feed/clear/', function(req, res){
-    console.log("Clearing feed from messages.");
-    feed_db.removeCollection("messages");
-    feed_db.addCollection('messages');
-    feed_db.saveDatabase();
-})
-
-
 // Set to listening
 app.listen(port, function(){
     console.log('Server started att port: '+port);
 })
+
+// HELP FUNCTIONS
+function clearCollection(database, collectionName) {
+    database.removeCollection(collectionName);
+    database.addCollection(collectionName);
+    database.saveDatabase();
+ } 
