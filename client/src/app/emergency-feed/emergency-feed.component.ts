@@ -10,7 +10,7 @@ export class EmergencyFeedComponent implements OnInit {
   msg: string
   fullname: string;
 
-  constructor() { }
+  constructor(private feed : FeedService) { }
 
   sendMessage(){
     const newMessage = {
