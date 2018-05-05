@@ -3,7 +3,15 @@
 	"collections": [{
 		"name": "users",
 		"data": [{
-			"name": "niklas",
+			"name":"John Larsson",
+            "age":"34",
+            "language":"English",
+            "rating":"0",
+            "tags":[
+                "#Washing machine",
+                "#Bicycle",
+                "#Food"  
+            ],
 			"meta": {
 				"revision": 0,
 				"created": 1525532523884,
