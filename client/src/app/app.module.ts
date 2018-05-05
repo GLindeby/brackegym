@@ -9,6 +9,7 @@ import { EmergencyFeedComponent } from './emergency-feed/emergency-feed.componen
 import { NavbarComponent} from './navbar/navbar.component';
 import { MakeprofileComponent} from './makeprofile/makeprofile.component';
 import { MatchComponent} from './match/match.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatchComponent} from './match/match.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
