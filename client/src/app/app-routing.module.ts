@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ProfileComponent} from './profile/profile.component';
-import {MakeprofileComponent} from './makeprofile/makeprofile.component';
-import {MatchComponent} from './match/match.component';
+import { ProfileComponent} from './profile/profile.component';
+import { MakeprofileComponent} from './makeprofile/makeprofile.component';
+import { MatchComponent} from './match/match.component';
+import { EmergencyFeedComponent} from './emergency-feed/emergency-feed.component';
 
 const routes: Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'makeprofile', component: MakeprofileComponent},
-  {path: 'match', component: MatchComponent}
+  {path: 'match', component: MatchComponent},
+  {path: 'emergency-feed', component: EmergencyFeedComponent}
   //{path: 'makeprofile', component: MakeprofileComponent}
 ];
 
