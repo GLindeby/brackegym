@@ -1,16 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import {FeedService} from '../services/feedservice.service';
+import { FeedService} from '../services/feedservice.service';
+import { Post } from '../models/post';
 
 @Component({
   selector: 'app-emergency-feed',
   templateUrl: './emergency-feed.component.html',
   styleUrls: ['./emergency-feed.component.css']
 })
+
 export class EmergencyFeedComponent implements OnInit {
   msg: string
   fullname: string;
+  posts: Post[] = [];
+  post: Post;
 
-  constructor(private feed : FeedService) { }
+
+  constructor(private feed: FeedService) {
+    this.post = new Post();
+  }
+
+  ngOnInit() {
+    this.getMessages();
+  }
 
   sendMessage(){
     const newMessage = {
@@ -18,11 +29,13 @@ export class EmergencyFeedComponent implements OnInit {
       msg: this.msg
     }
       this.feed.postMessage(newMessage);
+      console.log(newMessage);
   }
 
-  
-
-  ngOnInit() {
+  getMessages(){
+    this.feed.getFeed().subscribe(res => {
+      this.posts = res;
+      console.log(this.posts);
+    });
   }
-
 }
