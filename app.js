@@ -9,13 +9,24 @@ const port = 3000;
 const app = express();
 
 // DATABASE
+// user_db
 const user_db = new loki('users.json');
 user_db.loadDatabase({}, function(err) {
     if (err) {
       console.log("error : " + err);
     }
     else {
-      console.log("database loaded.");
+      console.log("User database loaded.");
+    }
+  });
+// feed_db
+const feed_db = new loki('feed.json');
+feed_db.loadDatabase({}, function(err) {
+    if (err) {
+      console.log("error : " + err);
+    }
+    else {
+      console.log("Feed loaded.");
     }
   });
 
@@ -32,12 +43,32 @@ app.get('/api/user/:name', function(req, res) {
 });
 
 app.post('/api/user/:user', function(req, res){
-    console.log("POST received user: " + req.params.user);
+    console.log("Adding new user: " + req.params.user);
     var user = JSON.parse(req.params.user);
     var users = user_db.getCollection('users');
     users.insert(user);
     user_db.saveDatabase();
 })
+
+app.get('/api/feed/', function(req, res) {
+    res.send(feed_db.getCollection('messages').data);
+});
+
+app.post('/api/feed/:message', function(req, res){
+    console.log("Posting new feed message: " + req.params.message);
+    var msg = JSON.parse(req.params.message);
+    var messages = feed_db.getCollection('messages');
+    messages.insert(msg);
+    feed_db.saveDatabase();
+})
+
+app.post('/api/feed/clear/', function(req, res){
+    console.log("Clearing feed from messages.");
+    feed_db.removeCollection("messages");
+    feed_db.addCollection('messages');
+    feed_db.saveDatabase();
+})
+
 
 // Set to listening
 app.listen(port, function(){
