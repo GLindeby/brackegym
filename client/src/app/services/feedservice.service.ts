@@ -16,6 +16,12 @@ export class FeedService {
     return this.http.get(this.url);
   }
 
+  clearFeed(){
+    this.http.post(this.url + "clear", "").subscribe(res => {
+      console.log(res);
+    }) 
+  }
+
   postMessage(message){
     var msg = JSON.stringify(message);
     this.http.post(this.url + msg, "").subscribe(res => {
