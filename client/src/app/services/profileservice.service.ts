@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+
 
 @Injectable({
   providedIn: 'root'
@@ -11,12 +11,12 @@ export class ProfileserviceService {
   
   
   getProfiles(){  
-    
-    return this.http.get("http://localhost:3000/api/user/");
+    return this.http.get("http://localhost:3000/api/user/all");//.subscribe((data) => data);
+    //return this.http.get("http://localhost:3000/api/user/").subscribe();
 
   }
   addProfile(){
-  
+
   }  
 }
 
