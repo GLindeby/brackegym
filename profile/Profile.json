@@ -1,0 +1,18 @@
+
+
+
+   {"Persons": [ 
+       
+        {
+            "name":"John Larsson",
+            "age":"34",
+            "language":"English",
+            "rating":"0",
+            "tags":[
+                "#Washing machine",
+                "#Bicycle",
+                "#Food"  
+            ]   
+        }
+    
+    ]}
