@@ -6,14 +6,16 @@
 			"name":"John Larsson",
             "age":"34",
             "language": [
-				"English"
+				"English",
+				"Swedish"
 			],
-			"info": "Lorum Ipsum Dorum Billi Barum Filli Lurum",
+			"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
             "rating":"0",
+						"status":"Provider",
             "tags":[
                 "#Washing machine",
                 "#Bicycle",
-                "#Food"  
+                "#Food"
             ],
 			"meta": {
 				"revision": 0,

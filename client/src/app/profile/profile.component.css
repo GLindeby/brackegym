@@ -1,0 +1,27 @@
+.bg-info{
+  margin-left: 10px;
+  border-radius: 5px;
+  padding-left: 6px;
+  color:#fff;
+}
+
+.bg-success{
+  margin-left: 10px;
+  border-radius: 5px;
+  padding-left: 6px;
+  color:#fff;
+}
+
+.row{
+  margin-left: -20px;
+  margin-right: 10px;
+  margin:auto;
+}
+
+p{
+  margin-left: 10px;
+}
+
+.container{
+  margin:auto;
+}

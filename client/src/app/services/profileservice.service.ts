@@ -8,15 +8,15 @@ import { Profile } from '../models/profile';
 export class ProfileserviceService {
 
   constructor(private http : HttpClient) { }
-  
-  
+
+
   getProfiles(){  
-    
+
     return this.http.get("http://localhost:3000/api/user/all");
 
   }
   addProfile( p: Profile ){
-    
+
     this.http.post("Http://localhost:3000/api/user/" + JSON.stringify(p), "").subscribe(
       res => {
         console.log(res);
@@ -28,7 +28,6 @@ export class ProfileserviceService {
         console.log(err.status)
       }
     );
-    
-  }  
-}
 
+  }
+}

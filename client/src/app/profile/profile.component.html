@@ -1,21 +1,25 @@
 <div class="container text-center">
-    <img src="assets/asd.jpg" class="center-block rounded-circle">
+    <img src="assets/asdasd.jpg" class="center-block rounded-circle">
     <h1>{{profile.name}}</h1>
     <hr>
-    <h5 class="text-left">Age {{profile.age}}</h5>
+    <h5 class="text-left">Age: {{profile.age}}</h5>
+    <h5 class = "text-left"> Status: {{profile.status}}</h5>
     <h5 class="text-left">Languages</h5>
     <div class="row">
       <div *ngFor = "let lang of profile.language">
-          {{lang}} &nbsp;    
+          <p class="bg-success">{{lang}} &nbsp;</p>
       </div>
     </div>
-    
+
     <h5 class="text-left">Tags</h5>
     <div class="row">
       <div *ngFor = "let tag of profile.tags">
-          {{tag}} &nbsp;    
+        <p class="bg-info">{{tag}} &nbsp;</p>
       </div>
     </div>
-    
+
+    <h5 class="text-left">About me!</h5>
+    <div class="row">
+        <p class="text-justify">{{profile.info}}</p>
+    </div>
 </div>
-<button (click) = "loadProfile()">test</button>

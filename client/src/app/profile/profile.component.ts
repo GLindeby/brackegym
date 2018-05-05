@@ -10,13 +10,12 @@ import {Profile} from '../models/profile';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
   profile: Profile;
 
-  constructor(private profileservice:ProfileserviceService, private http: HttpClient) { 
+  constructor(private profileservice:ProfileserviceService, private http: HttpClient) {
     this.profile = new Profile();
   }
-    
+
   ngOnInit() {
     this.loadProfile();
   }
@@ -25,7 +24,7 @@ export class ProfileComponent implements OnInit {
       console.log(res);
     });
   }
-  
+
   loadProfile(){
     this.profileservice.getProfiles().subscribe(res => {
       this.profile = res[0];
