@@ -3,3 +3,11 @@
     -ms-flex-direction: row;
     flex-direction: row;
 }
+.nav a{
+    color: white !important;
+    font-size: 0.9em !important;
+    }
+
+.nav li{
+padding:5px;
+}
