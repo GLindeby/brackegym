@@ -3,10 +3,13 @@ const bodyparser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
 const loki = require('lokijs');
+const cors = require('cors');
 
 // EXPRESS
 const port = 3000;
 const app = express();
+
+app.use(cors());
 
 // DATABASE
 // user_db
