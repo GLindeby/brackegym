@@ -10,6 +10,7 @@ import { NavbarComponent} from './navbar/navbar.component';
 import { MakeprofileComponent} from './makeprofile/makeprofile.component';
 import { MatchComponent} from './match/match.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StartComponent } from './start/start.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     MakeprofileComponent,
     MatchComponent,
-    EmergencyFeedComponent
+    EmergencyFeedComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
