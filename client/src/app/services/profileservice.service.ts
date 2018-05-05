@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Profile } from '../models/profile';
 
 @Injectable({
   providedIn: 'root'
@@ -11,15 +11,24 @@ export class ProfileserviceService {
   
   
   getProfiles(){  
-    //return this.http.get("http://localhost:3000/api/user/all");//.subscribe((data) => data);
-    //return this.http.get("http://localhost:3000/api/user/").subscribe();
-    this.http.get("http://localhost:3000/api/user/all").subscribe(res => {
-      console.log(res);
-    })
+    
+    return this.http.get("http://localhost:3000/api/user/all");
 
   }
-  addProfile(){
-
+  addProfile( p: Profile ){
+    
+    this.http.post("Http://localhost:3000/api/user/" + JSON.stringify(p), "").subscribe(
+      res => {
+        console.log(res);
+      },
+      (err: HttpErrorResponse) => {
+        console.log(err.error),
+        console.log(err.name),
+        console.log(err.message),
+        console.log(err.status)
+      }
+    );
+    
   }  
 }
 
