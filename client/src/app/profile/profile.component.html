@@ -1,18 +1,21 @@
 <div class="container text-center">
     <img src="assets/asd.jpg" class="center-block rounded-circle">
-    <h1>John Doe</h1>
+    <h1>{{profile.name}}</h1>
     <hr>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis massa at odio porttitor sollicitudin.
-      Morbi a lectus placerat, lobortis elit sed, interdum nisl. Donec pharetra tempor efficitur. Curabitur ac porttitor metus,
-      non egestas ante. Aliquam convallis tempor nulla, et accumsan arcu tristique et. Nulla nec augue auctor, blandit erat eget, lobortis velit. Sed scelerisque pretium auctor.
-    </p>
-
-    <h2>Behov</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis massa at odio porttitor sollicitudin.
-      Morbi a lectus placerat, lobortis elit sed, interdum nisl. Donec pharetra tempor efficitur. Curabitur ac porttitor metus,
-      non egestas ante. Aliquam convallis tempor nulla, et accumsan arcu tristique et. Nulla nec augue auctor, blandit erat eget, lobortis velit. Sed scelerisque pretium auctor.
-    </p>
+    <h5 class="text-left">Age {{profile.age}}</h5>
+    <h5 class="text-left">Languages</h5>
+    <div class="row">
+      <div *ngFor = "let lang of profile.language">
+          {{lang}} &nbsp;    
+      </div>
+    </div>
+    
+    <h5 class="text-left">Tags</h5>
+    <div class="row">
+      <div *ngFor = "let tag of profile.tags">
+          {{tag}} &nbsp;    
+      </div>
+    </div>
+    
 </div>
-<button (click) = "test()">test</button>
+<button (click) = "loadProfile()">test</button>

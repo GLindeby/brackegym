@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileserviceService } from '../services/profileservice.service';
+import {HttpClient} from '@angular/common/http';
+import {Profile} from '../models/profile';
 
 
 @Component({
@@ -9,14 +11,25 @@ import { ProfileserviceService } from '../services/profileservice.service';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor(private profileservice:ProfileserviceService) { }
+  profile: Profile;
 
+  constructor(private profileservice:ProfileserviceService, private http: HttpClient) { 
+    this.profile = new Profile();
+  }
+    
   ngOnInit() {
+    this.loadProfile();
   }
   test(){
-    this.profileservice.getProfiles();
-    //var data = this.profileservice.getProfiles();
-    //console.log(data);
+    this.profileservice.getProfiles().subscribe(res => {
+      console.log(res);
+    });
   }
-
+  
+  loadProfile(){
+    this.profileservice.getProfiles().subscribe(res => {
+      this.profile = res[0];
+      console.log(this.profile);
+    });
+  }
 }
