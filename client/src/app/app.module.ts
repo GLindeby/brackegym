@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EmergencyFeedComponent } from './emergency-feed/emergency-feed.component';
+import {NavbarComponent} from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    EmergencyFeedComponent
+    EmergencyFeedComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
