@@ -5,7 +5,10 @@
 		"data": [{
 			"name":"John Larsson",
             "age":"34",
-            "language":"English",
+            "language": [
+				"English"
+			],
+			"info": "Lorum Ipsum Dorum Billi Barum Filli Lurum",
             "rating":"0",
             "tags":[
                 "#Washing machine",

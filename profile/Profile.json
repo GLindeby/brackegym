@@ -6,7 +6,10 @@
         {
             "name":"John Larsson",
             "age":"34",
-            "language":"English",
+            "language": [
+				"English"
+            ],
+            "info": "Lorum Ipsum",
             "rating":"0",
             "tags":[
                 "#Washing machine",
