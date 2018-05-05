@@ -13,6 +13,7 @@ export class EmergencyFeedComponent implements OnInit {
   fullname: string;
   posts: Post[] = [];
   post: Post;
+  interval: any;
 
 
   constructor(private feed: FeedService) {
@@ -20,7 +21,9 @@ export class EmergencyFeedComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getMessages();
+    this.interval = setInterval(() => {
+        this.getMessages();
+    }, 2000);
   }
 
   sendMessage(){
@@ -38,4 +41,6 @@ export class EmergencyFeedComponent implements OnInit {
       console.log(this.posts);
     });
   }
+
+
 }
