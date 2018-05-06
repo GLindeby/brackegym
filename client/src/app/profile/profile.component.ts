@@ -4,6 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import {Profile} from '../models/profile';
 //import 'rxjs/add/operator/switchMap';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { concat } from 'rxjs/internal/observable/concat';
 
 
 @Component({
@@ -13,6 +14,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
   profile: Profile;
+  numbers = [];
 
   constructor(private profileservice:ProfileserviceService, private http: HttpClient, private route: ActivatedRoute,
     private router: Router,) {
@@ -28,6 +30,11 @@ export class ProfileComponent implements OnInit {
    this.profileservice.getProfile(name).subscribe(res => {
     this.profile = res[0] as Profile;
     console.log(this.profile);
+    this.numbers = Array(5).fill(0).map((x,i)=>{
+      console.log(this.profile.rating);
+    }
+    );
+    console.log(this.numbers);
     });
   }
 
