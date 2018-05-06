@@ -48,7 +48,7 @@ app.get('/api/user/matches/:name', function(req, res) {
     var users = user_db.getCollection('users');
     var user = users.find({ "name" : {$eq : req.params.name} });
     //var tags = user.find("tags");
-    console.logs("tags: " + tags);
+    //console.logs("tags: " + tags);
     var matches = users.find({ "name": { $ne : req.params.name} });
 
     res.send(matches);
