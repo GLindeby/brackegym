@@ -1,24 +1,25 @@
 .paragraphs{
-    margin-left: 20px;
-    margin-bottom: 100px;
-  }
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
 
-  .pull-left {
-    margin-right: 10px;
-  }
+.pull-left {
+  margin-right: 10px;
+}
 
-  label{
-    margin-right: 20px;
-  }
+label{
+  margin-right: 20px;
+}
 
-  .row{
-    margin-top: 10px;
-  }
+.row{
+  margin-top: 10px;
+}
 
-  .span4{
-    width: 60%;
-  }
+.span4{
+  width: 70%;
+}
 
-  h2{
-    margin-top: 10px;
-  }
+h4{
+  margin-top: 10px;
+  margin-left: 60px;
+}
