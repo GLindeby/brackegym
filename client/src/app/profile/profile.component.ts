@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileserviceService } from '../services/profileservice.service';
 import {HttpClient} from '@angular/common/http';
 import {Profile} from '../models/profile';
+//import 'rxjs/add/operator/switchMap';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 
 @Component({
@@ -12,22 +14,26 @@ import {Profile} from '../models/profile';
 export class ProfileComponent implements OnInit {
   profile: Profile;
 
-  constructor(private profileservice:ProfileserviceService, private http: HttpClient) {
+  constructor(private profileservice:ProfileserviceService, private http: HttpClient, private route: ActivatedRoute,
+    private router: Router,) {
     this.profile = new Profile();
   }
 
   ngOnInit() {
-    this.loadProfile();
-  }
-  test(){
-    this.profileservice.getProfiles().subscribe(res => {
-      console.log(res);
+    var name;
+    this.route.params.subscribe(params => {
+      name = params['name']; 
+   });
+   // Load profile with name given as argument
+   this.profileservice.getProfile(name).subscribe(res => {
+    this.profile = res[0] as Profile;
+    console.log(this.profile);
     });
   }
 
   loadProfile(){
     this.profileservice.getProfiles().subscribe(res => {
-      this.profile = res[0];
+      this.profile = res[0] as Profile;
       console.log(this.profile);
     });
   }

@@ -9,7 +9,7 @@ import { ChatComponent } from 'src/app/chat/chat.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
-  {path: 'profile', component: ProfileComponent},
+  {path: 'profile/:name', component: ProfileComponent},
   {path: 'makeprofile', component: MakeprofileComponent},
   {path: 'match', component: MatchComponent},
   {path: 'emergency-feed', component: EmergencyFeedComponent},

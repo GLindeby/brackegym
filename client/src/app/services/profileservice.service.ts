@@ -14,6 +14,11 @@ export class ProfileserviceService {
 
     return this.http.get<Profile[]>("http://localhost:3000/api/user/all");
   }
+
+  getProfile(name : String){
+    return this.http.get<Profile>("http://localhost:3000/api/user/" + name);
+  }
+
   getMatches(name : String){
     return this.http.get("http://localhost:3000/api/user/matches/" + name);
   }
