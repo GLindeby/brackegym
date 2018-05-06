@@ -19,7 +19,7 @@ export class FeedService {
   clearFeed(){
     this.http.post(this.url + "clear", "").subscribe(res => {
       console.log(res);
-    }) 
+    })
   }
 
   postMessage(message){

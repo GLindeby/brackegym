@@ -27,17 +27,22 @@ export class EmergencyFeedComponent implements OnInit {
   }
 
   sendMessage(){
-    const newMessage = {
-      fullname: this.fullname,
+    /*const newMessage = {
+      this.fullname = "John Doe",
       msg: this.msg
-    }
-      this.feed.postMessage(newMessage);
-      console.log(newMessage);
+    }*/
+
+      var msg = {fullname:"John Doe",
+      msg: this.msg};
+
+      console.log(msg);
+      this.feed.postMessage(msg);
+      //console.log(newMessage);
   }
 
   getMessages(){
     this.feed.getFeed().subscribe(res => {
-      this.posts = res;
+      this.posts = res as Post [];
       console.log(this.posts);
     });
   }

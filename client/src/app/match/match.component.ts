@@ -22,7 +22,7 @@ export class MatchComponent implements OnInit {
 
   loadMatches(){
     this.profileservice.getMatches("John Larsson").subscribe(res => {
-      this.profiles = res;
+      this.profiles = res as Profile [];
       console.log(this.profiles);
     });
   }
