@@ -1,3 +1,21 @@
-<p>
-  contacts works!
-</p>
+<div class="container text-center">
+  <h1>Contacts</h1>
+  <hr>
+  <div class="paragraphs">
+      <div *ngFor = "let user of users">
+        <div class="row">
+          <div class="span4">
+            <div class="clearfix content-heading">
+              <img class="rounded float-left" src="assets/johndoe2.jpg"/>
+              <h4 class="text-center">{{user.name}}</h4>
+            </div>
+          </div>
+            <div class="text-right">
+              <a routerLink="/chat">
+                <span style="font-size: 35px; margin-left: 60px" class="oi oi-envelope-closed text-right"></span>
+              </a>
+          </div>
+        </div>
+      </div>
+  </div> 
+</div> 
