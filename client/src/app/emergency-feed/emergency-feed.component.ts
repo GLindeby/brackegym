@@ -32,6 +32,7 @@ export class EmergencyFeedComponent implements OnInit {
 
       console.log(msg);
       this.feed.postMessage(msg);
+     this.msg = " ";
       //console.log(newMessage);
   }
 
