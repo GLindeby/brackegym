@@ -3,19 +3,19 @@
 	"collections": [{
 		"name": "users",
 		"data": [{
-				"name": "John Larsson",
+				"name": "Jon Snow",
 				"age": "34",
 				"language": [
-					"English",
-					"Swedish"
+					"English"
 				],
-				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"info": "Apparently I know nothing...?",
+				"rating": "1/5 star(s)",
 				"status": "Provider",
 				"tags": [
-					"#Washing machine",
-					"#Bicycle",
-					"#Food"
+					"#Swords",
+					"#Hospitality",
+					"#Food",
+					"#Beer"
 				],
 				"meta": {
 					"revision": 0,
@@ -25,18 +25,20 @@
 				"$loki": 1
 			},
 			{
-				"name": "John Doe",
-				"age": "17",
+				"name": "Oscar Hall",
+				"age": "30",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish",
+					"Spanish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "5/5 star(s)",
 				"status": "Client",
 				"tags": [
 					"#Washing machine",
-					"#Bicycle"
+					"#Bicycle",
+					"#Chorizo"
 				],
 				"meta": {
 					"revision": 0,
@@ -46,18 +48,19 @@
 				"$loki": 2
 			},
 			{
-				"name": "Jane Doe",
-				"age": "17",
+				"name": "Gabriel Lindeby",
+				"age": "23",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "1/5 star(s)",
 				"status": "Client",
 				"tags": [
 					"#Washing machine",
-					"#Bicycle"
+					"#Dishwasher",
+					"#Girlfriend"
 				],
 				"meta": {
 					"revision": 0,
@@ -67,18 +70,19 @@
 				"$loki": 3
 			},
 			{
-				"name": "John Deg",
-				"age": "17",
+				"name": "Lassemusse Rindy",
+				"age": "24",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "5/5 star(s)",
 				"status": "Client",
 				"tags": [
 					"#Washing machine",
-					"#Bicycle"
+					"#Fiber",
+					"#Internet"
 				],
 				"meta": {
 					"revision": 0,
@@ -88,18 +92,20 @@
 				"$loki": 4
 			},
 			{
-				"name": "Jane Deg",
-				"age": "17",
+				"name": "Isak Einler Larsson",
+				"age": "22",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "5/5 star(s)",
 				"status": "Client",
 				"tags": [
 					"#Washing machine",
-					"#Bicycle"
+					"#Bicycle",
+					"#Water",
+					"#Toilet"
 				],
 				"meta": {
 					"revision": 0,
@@ -109,18 +115,18 @@
 				"$loki": 5
 			},
 			{
-				"name": "boaty mcboatface",
-				"age": "17",
+				"name": "Nils Gangby",
+				"age": "12",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "3/5 star(s)",
 				"status": "Client",
 				"tags": [
-					"#Washing machine",
-					"#Bicycle"
+					"#Container",
+					"#moisture"
 				],
 				"meta": {
 					"revision": 0,
@@ -130,18 +136,17 @@
 				"$loki": 6
 			},
 			{
-				"name": "Jon Snow",
-				"age": "17",
+				"name": "Magnus Larsson",
+				"age": "35",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "2/5 star(s)",
 				"status": "Client",
 				"tags": [
-					"#Washing machine",
-					"#Bicycle"
+					"#Knowledge"
 				],
 				"meta": {
 					"revision": 0,
@@ -151,17 +156,18 @@
 				"$loki": 7
 			},
 			{
-				"name": "Rumpnisse",
-				"age": "17",
+				"name": "Hampus Hessel",
+				"age": "28",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "4/5 star(s)",
 				"status": "Client",
 				"tags": [
-					"#Washing machine",
+					"#Internet",
+					"#Language",
 					"#Bicycle"
 				],
 				"meta": {
@@ -172,18 +178,18 @@
 				"$loki": 8
 			},
 			{
-				"name": "Dr Disrespect",
-				"age": "17",
+				"name": "Albin Rydberg",
+				"age": "25",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "2/5 star(s)",
 				"status": "Client",
 				"tags": [
-					"#Washing machine",
-					"#Bicycle"
+					"#nintendo",
+					"#AeroPress"
 				],
 				"meta": {
 					"revision": 0,
@@ -193,18 +199,17 @@
 				"$loki": 9
 			},
 			{
-				"name": "GeT_RiGhT",
-				"age": "17",
+				"name": "Daniel Felchak",
+				"age": "24",
 				"language": [
 					"English",
-					"Farsi"
+					"Swedish"
 				],
 				"info": "Nam vel vehicula eros. Ut rutrum interdum ex, eget blandit eros porta at. Phasellus eu lobortis turpis, non maximus erat. Phasellus sagittis pellentesque lorem, quis dictum mauris interdum vel. Aliquam feugiat eu velit vel efficitur. Proin ut laoreet purus, eu consequat massa. Praesent luctus felis felis, id pellentesque ligula lobortis a. Praesent consequat leo at nibh viverra lacinia. Nulla facilisi. Vivamus faucibus, lectus in blandit.",
-				"rating": "0",
+				"rating": "1/5 star(s)",
 				"status": "Client",
 				"tags": [
-					"#Washing machine",
-					"#Bicycle"
+					"#Motorcycle"
 				],
 				"meta": {
 					"revision": 0,
