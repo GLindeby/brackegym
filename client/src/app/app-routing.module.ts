@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'match', component: MatchComponent},
   {path: 'emergency-feed', component: EmergencyFeedComponent},
   {path: 'start', component: StartComponent},
-  {path: 'chat', component: ChatComponent},
+  {path: 'chat/:name', component: ChatComponent},
   {path: 'contacts', component: ContactsComponent}
   //{path: 'makeprofile', component: MakeprofileComponent}
 ];

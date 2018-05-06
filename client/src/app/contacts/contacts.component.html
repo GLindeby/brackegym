@@ -11,7 +11,7 @@
             </div>
           </div>
             <div class="text-right">
-              <a routerLink="/chat">
+              <a [routerLink]="['/chat', user.name]">
                 <span style="font-size: 35px; margin-left: 67px" class="oi oi-envelope-closed text-right"></span>
               </a>
           </div>

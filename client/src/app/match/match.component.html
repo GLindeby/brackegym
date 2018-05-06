@@ -10,6 +10,11 @@
             <h4 class="text-left" [routerLink]="['/profile', profile.name]">{{profile.name}}</h4>
           </div>
         </div>
+        <div class="text-right">
+          <a  [routerLink]="['/chat', profile.name]">
+            <span style="font-size: 35px; margin-left: 67px" class="oi oi-envelope-closed text-right"></span>
+          </a>
+      </div>
       </div>
     </div>
   </div>
