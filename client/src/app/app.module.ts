@@ -12,6 +12,7 @@ import { MatchComponent} from './match/match.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StartComponent } from './start/start.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ChatComponent } from './chat/chat.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     MatchComponent,
     EmergencyFeedComponent,
     StartComponent,
-    ContactsComponent
+    ContactsComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
