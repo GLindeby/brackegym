@@ -13,11 +13,13 @@ export class ProfileserviceService {
   getProfiles(){  
 
     return this.http.get<Profile[]>("http://localhost:3000/api/user/all");
-
   }
-  addProfile( p: Profile ){
+  getMatches(name : String){
+    return this.http.get("http://localhost:3000/api/user/matches/" + name);
+  }
 
-    this.http.post("Http://localhost:3000/api/user/" + JSON.stringify(p), "").subscribe(
+  addProfile( p: Profile ){
+    this.http.post("http://localhost:3000/api/user/" + JSON.stringify(p), "").subscribe(
       res => {
         console.log(res);
       },

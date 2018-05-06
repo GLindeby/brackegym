@@ -44,6 +44,16 @@ app.get('/api/user/all', function(req, res) {
     res.send(user_db.getCollection('users').data);
 });
 
+app.get('/api/user/matches/:name', function(req, res) {
+    var users = user_db.getCollection('users');
+    var user = users.find({ "name" : {$eq : req.params.name} });
+    //var tags = user.find("tags");
+    console.logs("tags: " + tags);
+    var matches = users.find({ "name": { $ne : req.params.name} });
+
+    res.send(matches);
+});
+
 app.get('/api/user/:name', function(req, res) {
     var users = user_db.getCollection('users');
     res.send(users.find({name: req.params.name}));

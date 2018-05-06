@@ -111,3 +111,10 @@ body {
   background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); 
 }
+
+.block {
+    height: -webkit-calc(100vh - 66px);
+    height: -moz-calc(100vh - 66px);
+    height: calc(100vh - 66px);
+    background-color: rgba(90,90,190,0.8);
+  } 
