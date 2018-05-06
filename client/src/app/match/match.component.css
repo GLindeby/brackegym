@@ -1,7 +1,6 @@
 .paragraphs{
   margin-left: 20px;
   margin-bottom: 100px;
-  width:100%;
 }
 
 .pull-left {
@@ -20,6 +19,6 @@ label{
   width: 60%;
 }
 
-h2{
+h4{
   margin-top: 10px;
 }
