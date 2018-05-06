@@ -7,7 +7,7 @@
         <div class="span4">
           <div class="clearfix content-heading">
             <img class="rounded float-left" src="assets/johndoe2.jpg"/>
-            <h4 class="text-center">{{profile.name}}</h4>
+            <a [routerLink]="['/profile', profile.name]" class="text-center h4">{{profile.name}}</a>
           </div>
         </div>
       </div>

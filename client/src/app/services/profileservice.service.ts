@@ -12,11 +12,11 @@ export class ProfileserviceService {
 
   getProfiles(){  
 
-    return this.http.get<Profile[]>("http://localhost:3000/api/user/all");
+    return this.http.get("http://localhost:3000/api/user/all");
   }
 
   getProfile(name : String){
-    return this.http.get<Profile>("http://localhost:3000/api/user/" + name);
+    return this.http.get("http://localhost:3000/api/user/" + name);
   }
 
   getMatches(name : String){
