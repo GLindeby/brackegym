@@ -19,6 +19,16 @@
     </div>
 
     <h5 class = "text-left"> Rating: {{profile.rating}}</h5>
+    <div class="row">
+      <div *ngFor="let rate of numbers">
+        <span *ngIf="rate == 1" class="oi oi-star" style="color: yellow"></span>
+      </div>
+      <div *ngFor="let rate of numbers">
+        <span *ngIf="rate == 0" class="oi oi-star"></span>
+      </div>
+    </div>
+    
+    
 
     <h5 class="text-left">About me!</h5>
     <div class="row">
