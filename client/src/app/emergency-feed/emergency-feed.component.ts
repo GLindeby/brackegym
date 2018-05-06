@@ -21,6 +21,7 @@ export class EmergencyFeedComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getMessages();
     this.interval = setInterval(() => {
         this.getMessages();
     }, 10000);
@@ -32,6 +33,7 @@ export class EmergencyFeedComponent implements OnInit {
 
       console.log(msg);
       this.feed.postMessage(msg);
+      this.getMessages();
       //console.log(newMessage);
   }
 
