@@ -11,6 +11,7 @@ import { MakeprofileComponent} from './makeprofile/makeprofile.component';
 import { MatchComponent} from './match/match.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StartComponent } from './start/start.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { StartComponent } from './start/start.component';
     MakeprofileComponent,
     MatchComponent,
     EmergencyFeedComponent,
-    StartComponent
+    StartComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
