@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileserviceService } from '../services/profileservice.service';
+import {HttpClient} from '@angular/common/http';
+import { Profile } from '../models/profile';
 
 @Component({
   selector: 'app-match',
@@ -6,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./match.component.css']
 })
 export class MatchComponent implements OnInit {
+  profiles: Profile[] = [];
+  profile: Profile;
 
-  constructor() { }
+  constructor(private profileservice:ProfileserviceService, private http: HttpClient) {
+    this.profile = new Profile()
+  }
 
   ngOnInit() {
+    this.loadMatches();
+  }
+
+  loadMatches(){
+    this.profileservice.getMatches("John Larsson").subscribe(res => {
+      this.profiles = res;
+      console.log(this.profiles);
+    });
   }
 
 }

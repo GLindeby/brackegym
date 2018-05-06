@@ -1,4 +1,6 @@
 <div class = "container">
+  <h1 class="text-center">Instant feed</h1>
+  <hr>
   <div *ngFor = "let post of posts">
     <div class="row">
         <div class = "col-md-3">
@@ -6,7 +8,6 @@
           </div>
     </div>
   </div>
-  <hr>
   <div class = "messagebox">
     <form (submit) = "sendMessage()">
       <div class = "form-group">

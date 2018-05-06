@@ -1,12 +1,12 @@
 .bg-info{
-  margin-left: 10px;
+  margin-left: 1px;
   border-radius: 5px;
   padding-left: 6px;
   color:#fff;
 }
 
 .bg-success{
-  margin-left: 10px;
+  margin-left: 1px;
   border-radius: 5px;
   padding-left: 6px;
   color:#fff;
@@ -24,4 +24,8 @@ p{
 
 .container{
   margin:auto;
+}
+
+.text-justify{
+  margin-left: -2px;
 }
