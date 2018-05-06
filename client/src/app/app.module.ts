@@ -11,6 +11,7 @@ import { MakeprofileComponent} from './makeprofile/makeprofile.component';
 import { MatchComponent} from './match/match.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StartComponent } from './start/start.component';
+import { ContactsComponent } from './contacts/contacts.component';
 import { ChatComponent } from './chat/chat.component';
 
 
@@ -24,6 +25,7 @@ import { ChatComponent } from './chat/chat.component';
     MatchComponent,
     EmergencyFeedComponent,
     StartComponent,
+    ContactsComponent,
     ChatComponent
   ],
   imports: [
