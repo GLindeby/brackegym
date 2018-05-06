@@ -12,7 +12,7 @@ export class ProfileserviceService {
 
   getProfiles(){  
 
-    return this.http.get("http://localhost:3000/api/user/all");
+    return this.http.get<Profile[]>("http://localhost:3000/api/user/all");
 
   }
   addProfile( p: Profile ){
