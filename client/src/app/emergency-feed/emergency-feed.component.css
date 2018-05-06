@@ -1,3 +1,20 @@
 .messagebox{
-  margin-top: 75%;
+  margin-bottom: 20px;
+}
+
+
+.bg-info{
+  border-radius: 5px;
+  color:#fff;
+  height:60px;
+}
+
+.float-left{
+  border-radius: 5px;
+  margin-left: 0px;
+  height:60px;
+}
+
+p{
+  padding-left:70px;
 }

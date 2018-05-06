@@ -11,3 +11,16 @@
 .nav li{
 padding:5px;
 }
+
+.navbar-default {
+    background-color: #007bff;
+    border-color: #E7E7E7;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a{
+  color:#bdc3c7;
+}
