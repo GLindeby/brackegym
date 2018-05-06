@@ -5,13 +5,15 @@ import { MakeprofileComponent} from './makeprofile/makeprofile.component';
 import { MatchComponent} from './match/match.component';
 import { EmergencyFeedComponent} from './emergency-feed/emergency-feed.component';
 import { StartComponent } from './start/start.component';
+import { ChatComponent } from 'src/app/chat/chat.component';
 
 const routes: Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'makeprofile', component: MakeprofileComponent},
   {path: 'match', component: MatchComponent},
   {path: 'emergency-feed', component: EmergencyFeedComponent},
-  {path: 'start', component: StartComponent}
+  {path: 'start', component: StartComponent},
+  {path: 'chat', component: ChatComponent}
   //{path: 'makeprofile', component: MakeprofileComponent}
 ];
 
