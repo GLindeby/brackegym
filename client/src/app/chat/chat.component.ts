@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-chat',
@@ -8,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatComponent implements OnInit {
 
-  constructor() { }
+  name : String;
+
+  constructor(private route: ActivatedRoute, private router: Router) {
+  }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.name = params['name'];
+   });
   }
 
   chatta(){
